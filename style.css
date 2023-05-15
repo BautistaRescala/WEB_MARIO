@@ -1,0 +1,72 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+header{
+  font-family: 'Super Mario 256', sans-serif; 
+  -webkit-text-stroke: 3px white ;
+  min-height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background-image: url(img/banner_supermario.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+header h1{
+  flex-grow: 1;
+  font-size: 3rem;
+  text-align:center;
+  letter-spacing: 0.25rem;  
+}
+
+header img{
+  height:150px;
+  width:150px;
+}
+
+
+@keyframes botoncito {
+  from{background-color:hotpink}
+  to{background-color:white}
+}
+
+nav{
+  display:flex;
+  flex-wrap: wrap;
+  font-family: 'Super Mario 256', sans-serif;
+  background-color: #3d2563;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  padding:25px;
+}
+nav a{
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding:1rem;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 1rem;
+  text-align: center;
+  height:3.7rem;
+}
+
+nav a:hover{
+  transform: scale(1.5);
+  transition: transform 0.2s ease-in-out;
+  animation-name: botoncito;
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
