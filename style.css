@@ -70,3 +70,34 @@ nav a:hover{
   animation-direction: alternate;
   animation-iteration-count: infinite;
 }
+
+main{
+  padding: 3rem;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.galeria{
+  display:flex;
+  width:90vw;
+  height: 700px;
+  min-height: 900px;
+  justify-content: center;
+  align-items: center;
+}
+
+.galeria img{
+  width: 15%;
+  height: 100%;
+  height: 600px;
+  object-fit: cover;
+  transition: all 1s ease-in-out;
+  transform-origin: center;
+}
+
+.galeria img:hover{
+  width:30%;
+  height:70%;
+}
