@@ -60,11 +60,11 @@ nav a{
   border-radius: 1rem;
   text-align: center;
   height:3.7rem;
+  transition: transform 0.2s ease-in-out;
 }
 
 nav a:hover{
   transform: scale(1.5);
-  transition: transform 0.2s ease-in-out;
   animation-name: botoncito;
   animation-duration: 0.5s;
   animation-direction: alternate;
